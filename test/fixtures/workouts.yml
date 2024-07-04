@@ -3,11 +3,11 @@
 one:
   user_id: 1
   date: 2024-07-04
-  type: 
+  workout_type: 
   duration: 1
 
 two:
   user_id: 1
   date: 2024-07-04
-  type: 
+  workout_type: 
   duration: 1
