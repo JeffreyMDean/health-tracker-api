@@ -6,6 +6,7 @@ class WorkoutsController < ApplicationController
 
   def create
     @workout = Workout.create(
+      user_id: params[:user_id],
       date: params[:date],
       workout_type: params[:workout_type],
       duration: params[:duration],
