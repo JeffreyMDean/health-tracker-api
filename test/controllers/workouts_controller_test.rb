@@ -8,4 +8,11 @@ class WorkoutsControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal Workout.count, data.length
   end
+
+  test "create" do
+    assert_difference "Workout.count", 1 do
+      post "/workouts.json", params: { date: "2024-07-03", workout_type: "Yoga", duration: 35 }
+      assert_response 200
+    end
+  end
 end
